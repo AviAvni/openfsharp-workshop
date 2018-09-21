@@ -7,7 +7,7 @@ let run () =
 
     let sourceTok = FSharpSourceTokenizer([], Some dummyFile)
 
-    let code = "let answer = 42"
+    let code = "let tuple : int * int = 42, 42"
 
     let tokenizer = sourceTok.CreateLineTokenizer(code)
 
